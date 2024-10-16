@@ -1,0 +1,6 @@
+@mixin link-focus-visible{
+  &:focus-visible {
+    outline: 1px solid var(--accent-color);
+    outline-offset: 3px;
+  }
+}

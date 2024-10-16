@@ -1,0 +1,36 @@
+.btn{
+  display: inline-flex;
+  margin: auto;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 80px;
+  padding: 17px 33px;
+  font-size: 13px;
+  line-height: 154%;
+  color: var(--light-color);
+  transition: border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+
+  &--light{
+    border: 1px solid rgba(53, 83, 98, 0.2);
+    color: #00413e;
+  }
+
+  &:focus-visible{
+    border-color: var(--accent-color);
+  }
+
+  @media (any-hover: hover) {
+    &:hover {
+      border-color: var(--accent-color);
+      background-color: var(--accent-color)
+    }
+  }
+
+  &:active{
+      border-color: var(--secondary-accent-color);
+      background-color: var(--secondary-accent-color)
+  }
+
+
+
+}

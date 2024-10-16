@@ -1,0 +1,19 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --font-family: " PublicSuns", sans-serif;
+  --secondary-family: "LibreBaskerville", sans-serif;
+  --content-width: 1152px;
+  --container-offset: 64px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --grid-offset: 32px;
+  --main-font-size: 15px;
+
+  // colors
+  --light-color: #fff;
+  --dark-color: rgb(53, 83 ,98);
+  --secondary-dark-color: #003331;
+  --accent-color: #00A1FF;
+  --secondary-accent-color: #E00E00;
+}

@@ -1,0 +1,49 @@
+// ваш код
+.header{
+  padding: 17px 0;
+
+  &__container{
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo{
+    margin-right: 100px;
+    min-width: 110px;
+  }
+
+  &--position{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+}
+
+.nav{
+  align-items: center;
+  padding-right: 16px;
+
+  &__list{
+    align-items: center;
+    margin-right: 32px;
+    gap: 51px;
+  }
+
+  &__link{
+    color: var(--light-color);
+    transition: 0.1s ease-in-out;
+
+    @include link-focus-visible;
+
+    @media (any-hover: hover) {
+      &:hover {
+        color: var(--accent-color)
+      }
+    }
+
+    &:active{
+      color: var(--secondary-accent-color)
+    }
+  }
+}
