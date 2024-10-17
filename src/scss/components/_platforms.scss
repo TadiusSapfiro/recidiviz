@@ -1,0 +1,84 @@
+.platforms{
+  &__container{
+    margin-top: auto;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    width: 100%;
+  }
+
+  &__item{
+    display: block;
+    grid-column: span 2;
+    border-top:1px solid rgba(53, 83, 98, 0.3);;
+    padding-top: 17px;
+    color: var(--dark-color);
+    transition: 0.1s ease-in-out;
+    cursor: pointer;
+
+
+    // only provides on hover supported platforms
+    @media (any-hover: hover) {
+      &:hover {
+        color: var(--accent-color);
+      }
+    }
+
+    &:active{
+      color: var(--secondary-accent-color);
+    }
+  }
+
+  &__link{
+    position: relative;
+    display: block;
+    padding-left: 32px;
+    font-weight: 400;
+    font-size: var(--main-font-size);
+    line-height: 160%;
+    color: inherit;
+    opacity: 0.8;
+
+    &::before{
+      content: "";
+      position: absolute;
+      left: 0;top: 0;
+      display: block;
+      width: 24px;
+      height: 24px;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    @include link-focus-visible;
+
+    &--ted::before{
+      background-image: url("../img/platform-icon-1.png");
+    }
+
+    &--nyt::before{
+      background-image: url("../img/platform-icon-2.png");
+
+    }
+
+    &--scoop::before{
+      background-image: url("../img/platform-icon-3.png");
+
+    }
+
+    &--ap::before{
+      background-image: url("../img/platform-icon-4.png");
+
+    }
+
+    &--time::before{
+      background-image: url("../img/platform-icon-5.png");
+
+    }
+
+    &--freethink::before{
+      background-image: url("../img/platform-icon-6.png");
+
+    }
+  }
+}
