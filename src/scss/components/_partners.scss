@@ -1,0 +1,97 @@
+.partners{
+  padding: 16px 0;
+
+  &__container{
+    align-items: center;
+    gap: 7px;
+  }
+
+  &__title{
+    margin: 0;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 145%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--dark-color);
+    opacity: 0.6;
+  }
+
+  &__list{
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+  }
+
+  &__link{
+    display: block;
+    width: 160px;
+    height: 67px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: opacity 0.2s ease-in-out, filter 0.2s ease-in-out;
+
+    &--reform{
+      background-image: url("../img/partners-1.jpg");
+    }
+
+    &--schmidt{
+      background-image: url("../img/partners-2.jpg");
+    }
+
+    &--roc{
+      background-image: url("../img/partners-3.jpg");
+    }
+
+    &--mozilla{
+      background-image: url("../img/partners-4.jpg");
+    }
+
+    &--aclu{
+      background-image: url("../img/partners-5.jpg");
+    }
+
+    &--y{
+      background-image: url("../img/partners-6.jpg");
+    }
+
+    &:focus-visible{
+     outline-color: var(--accent-color);
+    }
+
+    @media (any-hover: hover) {
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+
+    &:active{
+     filter: blur(2px)
+    }
+  }
+
+  &__more{
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 145%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--dark-color);
+    opacity: 0.6;
+    transition: 0.2s ease-in-out;
+
+    @media (any-hover: hover) {
+      &:hover {
+        color: var(--accent-color);
+      }
+    }
+
+    &:active{
+      color: var(--secondary-accent-color);
+    }
+
+    @include link-focus-visible
+  }
+
+}

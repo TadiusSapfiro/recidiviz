@@ -8,11 +8,22 @@
   font-size: 13px;
   line-height: 154%;
   color: var(--light-color);
-  transition: border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  transition: border-color 0.2s ease-in-out, background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 
   &--light{
     border: 1px solid rgba(53, 83, 98, 0.2);
     color: #00413e;
+
+    @media (any-hover: hover) {
+      &:hover {
+        color: var(--light-color);
+      }
+    }
+
+    &:active{
+      color: var(--light-color);
+    }
+
   }
 
   &:focus-visible{
@@ -27,8 +38,8 @@
   }
 
   &:active{
-      border-color: var(--secondary-accent-color);
-      background-color: var(--secondary-accent-color)
+    border-color: var(--secondary-accent-color);
+    background-color: var(--secondary-accent-color)
   }
 
 
