@@ -1,0 +1,46 @@
+.insight{
+  padding-bottom: 141px;
+  background-color: #F7F8F8;
+
+  &__img{
+    width: 100%;
+  }
+
+  &__title{
+    grid-column: 5 span;
+    margin: 0;
+    font-family: var(--secondary-family);
+    font-weight: 400;
+    font-size: 31px;
+    line-height: 123%;
+    letter-spacing: 0.04em;
+    color: var(--secondary-dark-color);
+  }
+
+  &__list{
+    grid-column: 7 / 6 span;
+    grid-template-columns: repeat(6, 1fr);
+    row-gap: 36px;
+  }
+
+  &__item{
+    grid-column: 3 span;
+  }
+
+  &__subtitle{
+    margin: 0;
+    font-weight: 400;
+    font-size: var(--main-font-size);
+    line-height: 160%;
+    color: var(--secondary-dark-color)
+  }
+
+  &__descr{
+    margin: 0;
+    font-weight: 400;
+    font-size: var(--main-font-size);
+    line-height: 160%;
+    color: var(--dark-color);
+    opacity: 0.8;
+  }
+}
