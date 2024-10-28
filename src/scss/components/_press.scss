@@ -1,0 +1,109 @@
+.press{
+  &__container{
+    flex-wrap: wrap;
+    padding-top: 80px;
+    padding-bottom: 132px;
+  }
+
+  &__title{
+    flex-grow: 1;
+    margin: 0;
+    font-family: var(--secondary-family);
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 141%;
+    letter-spacing: 0.04em;
+    color: var(--secondary-dark-color);
+  }
+
+  &__list{
+    margin-top: 24px;
+    width: 100%;
+    row-gap: 50px;
+  }
+
+  &__item{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    grid-column: 4 span;
+    border-top: 1px solid rgba(53, 83, 98, 0.3);
+    padding-top: 20px;
+  }
+
+  &__name{
+    position: relative;
+    margin: 0;
+    margin-right: 15px;
+    padding-left: 40px;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 145%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: rgba(53, 83, 98, 0.6);
+
+    &::before{
+      content: "";
+      position: absolute;
+      left: 0;top: 0;
+      display: block;
+      width: 24px;
+      height: 24px;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    &--ted::before{
+      background-image: url("../img/platform-icon-1.png");
+    }
+
+    &--cnews::before{
+      background-image: url("../img/press-1.png");
+
+    }
+
+    &--doj::before{
+      background-image: url("../img/press-2.png");
+
+    }
+
+    &--nyt::before{
+      background-image: url("../img/platform-icon-2.png");
+
+    }
+
+    &--corr1::before{
+      background-image: url("../img/press-3.png");
+
+    }
+
+    &--roc::before{
+      background-image: url("../img/press-4.png");
+
+    }
+
+  }
+
+  &__date{
+    font-size: 11px;
+    line-height: 145%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--dark-color);
+    opacity: 0.6;
+  }
+
+  &__descr{
+    margin: 0;
+    margin-top: 14px;
+    margin-bottom: auto;
+    width: 85%;
+    height: 100%;
+    font-size: 17px;
+    line-height: 145%;
+    color: #00413e;
+  }
+
+}
