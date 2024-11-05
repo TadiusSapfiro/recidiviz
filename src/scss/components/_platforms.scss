@@ -82,3 +82,12 @@
     }
   }
 }
+
+@media (max-width: (1175px)) {
+  .platforms{
+    &__link{
+      font-size: 13px;
+    }
+  }
+
+}

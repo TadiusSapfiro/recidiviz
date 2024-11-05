@@ -16,4 +16,8 @@
   --secondary-dark-color: #003331;
   --accent-color: #00A1FF;
   --secondary-accent-color: #E00E00;
+
+  @media (max-width: (956px)) {
+    --main-font-size: 13px;
+  }
 }

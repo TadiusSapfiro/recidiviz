@@ -49,9 +49,22 @@
 
   &__link{
     font-weight: 400;
-    font-size: 15px;
+    font-size: var(--main-font-size);
     line-height: 200%;
     color: #edeceb;
+    transition: color 0.2s ease-in-out;
+
+    @media (any-hover: hover) {
+      &:hover {
+        color: var(--accent-color);
+      }
+    }
+
+    &:active{
+      color: var(--secondary-accent-color);
+    }
+
+    @include link-focus-visible
   }
 
 
@@ -66,19 +79,34 @@
   }
 
   &__info{
-    text-align: right;
     max-width: 264px;
     font-weight: 400;
     font-size: 10px;
     line-height: 100%;
+    text-align: right;
     color: #e5ecec;
 
     a{
       color: inherit;
+      transition: color 0.2s ease-in-out;
+
+      @media (any-hover: hover) {
+        &:hover {
+          color: var(--accent-color);
+        }
+      }
+
+      &:active{
+        color: var(--secondary-accent-color);
+      }
+
+      @include link-focus-visible
     }
   }
 
-
+  &__rights{
+    white-space: nowrap;
+  }
 
 
 }

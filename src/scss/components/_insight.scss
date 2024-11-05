@@ -44,3 +44,12 @@
     opacity: 0.8;
   }
 }
+
+@media (max-width: (956px)) {
+  .insight{
+    &__title{
+      font-size: 24px;
+    }
+  }
+
+}

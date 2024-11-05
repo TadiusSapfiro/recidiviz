@@ -95,3 +95,24 @@
   }
 
 }
+
+
+@media (max-width: (1255px)) {
+  .partners{
+    &__link{
+      width: 131px;
+      height: 55px;
+    }
+  }
+
+}
+
+@media (max-width: (1060px)) {
+  .partners{
+    &__link{
+      width: 100px;
+      height: 47px;
+    }
+  }
+
+}

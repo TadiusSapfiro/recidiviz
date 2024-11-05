@@ -21,10 +21,10 @@
   }
 
   &__descr{
+    margin: 29px 0;
     font-family: var(--font-family);
     font-size: 18px;
     line-height: 28px;
-    letter-spacing: 0%;
   }
 
   &__bottom{
@@ -75,6 +75,26 @@
     color: inherit;
 
     @include link-focus-visible
+  }
+
+  &__btn{
+    margin-bottom: 50px;
+  }
+
+}
+
+@media (max-width: (1070px)) {
+  .hero{
+    &__title{
+      font-size: 26px;
+      line-height: 32px;
+      letter-spacing: 1px;
+    }
+
+    &__descr{
+      font-size: 15px;
+      line-height: 21px;
+    }
   }
 
 }

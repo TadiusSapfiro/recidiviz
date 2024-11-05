@@ -107,3 +107,13 @@
   }
 
 }
+
+@media (max-width: (956px)) {
+  .press{
+    &__date{
+      padding-left: 40px;
+      width: 100%;
+    }
+  }
+
+}
