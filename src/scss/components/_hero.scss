@@ -81,10 +81,20 @@
     margin-bottom: 50px;
   }
 
-}
+  @media (max-width: (1070px)) {
+    &__title{
+      font-size: 26px;
+      line-height: 32px;
+      letter-spacing: 1px;
+    }
 
-@media (max-width: (1070px)) {
-  .hero{
+    &__descr{
+      font-size: 15px;
+      line-height: 21px;
+    }
+  }
+
+  @media (max-width: (1070px)) {
     &__title{
       font-size: 26px;
       line-height: 32px;
@@ -98,6 +108,10 @@
   }
 
 }
+
+
+
+
 
 
 

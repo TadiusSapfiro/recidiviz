@@ -20,6 +20,8 @@
   }
 }
 
+@include burger;
+
 .nav{
   align-items: center;
   padding-right: 16px;
@@ -44,6 +46,18 @@
 
     &:active{
       color: var(--secondary-accent-color)
+    }
+  }
+
+  @media (max-width: (1070px)) {
+    &__list{
+      gap:20px
+    }
+  }
+
+  @media (max-width: (740px)) {
+    &__list{
+      gap:20px
     }
   }
 }
