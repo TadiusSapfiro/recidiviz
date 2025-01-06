@@ -1,6 +1,5 @@
 .btn{
   display: inline-flex;
-  margin: auto;
   outline: none;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 80px;
@@ -43,6 +42,14 @@
     background-color: var(--secondary-accent-color)
   }
 
+  @media(width <= 1000px){
+    padding: 10px 30px;
+    font-size: 12px;
+  }
+
+  @media(width <= 500px){
+    padding: 10px 25px;
+  }
 
 
 }

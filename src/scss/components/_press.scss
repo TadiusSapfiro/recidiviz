@@ -106,14 +106,31 @@
     color: #00413e;
   }
 
-}
+  @media (width <= 1000px) {
+    &__container{
+      padding-top: 40px;
+      padding-bottom: 70px;
+    }
 
-@media (max-width: (956px)) {
-  .press{
-    &__date{
-      padding-left: 40px;
+    &__item{
+      grid-column: 6 span;
+      padding-top: 15px;
+    }
+
+    &__list{
+      row-gap: 20px;
+    }
+
+
+    &__title{
+      font-size: 22px;
+    }
+
+    &__descr{
       width: 100%;
     }
   }
 
 }
+
+

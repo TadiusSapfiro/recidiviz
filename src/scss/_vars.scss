@@ -5,7 +5,7 @@
   --font-family: " PublicSuns", sans-serif;
   --secondary-family: "LibreBaskerville", sans-serif;
   --content-width: 1152px;
-  --container-offset: 64px;
+  --container-offset: 5vw;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
   --grid-offset: 32px;
   --main-font-size: 15px;
@@ -17,7 +17,4 @@
   --accent-color: #00A1FF;
   --secondary-accent-color: #E00E00;
 
-  @media (max-width: (956px)) {
-    --main-font-size: 13px;
-  }
 }

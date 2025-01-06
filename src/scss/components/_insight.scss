@@ -43,13 +43,46 @@
     color: var(--dark-color);
     opacity: 0.8;
   }
-}
 
-@media (max-width: (956px)) {
-  .insight{
+  @media (width <= 1000px) {
+    padding-bottom: 70px;
+
     &__title{
-      font-size: 24px;
+      grid-column: 6 span;
+      font-size: 32px;
+    }
+
+    &__list{
+      grid-column: 6 span;
+      row-gap: 22px;
+    }
+
+    &__item{
+      grid-column: 3 span;
+    }
+
+    &__subtitle{
+      font-size: 15px;
+    }
+
+    &__descr{
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 160%;
+      color: #355362cc;
     }
   }
 
+  @media(width <= 767px){
+    &__title{
+      font-size: 22px;
+    }
+
+    &__item{
+      grid-column: 6 span;
+
+    }
+  }
 }
+
+

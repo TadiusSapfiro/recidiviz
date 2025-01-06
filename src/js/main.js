@@ -1,1 +1,4 @@
-import './_components.js';
+import { burgerMenu } from './components/burger.js';
+
+burgerMenu();
+

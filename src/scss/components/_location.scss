@@ -40,4 +40,30 @@
   &__map{
     grid-column: 7 / 5 span;
   }
+
+  @media (width <= 1000px) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    &__map{
+      justify-self: center;
+      order: -1;
+      grid-column: 6 span;
+    }
+
+    &__content{
+      grid-column: 6 span;
+    }
+
+    &__title{
+      margin-bottom: 20px;
+      font-size: 27px;
+    }
+
+    &__descr{
+      max-width: 100%;
+      font-size: 14px;
+      line-height: 150%;
+    }
+  }
 }

@@ -1,9 +1,9 @@
 .hero{
   display: flex;
   flex-direction: column;
-  min-height: 776px;
+  min-height: 100vh;
   color: var(--light-color);
-  background-image: url("../img/hero-bg.jpg");
+  background-image: url("../img/hero-bg.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -81,11 +81,15 @@
     margin-bottom: 50px;
   }
 
-  @media (max-width: (1070px)) {
+  @media (width <= 1000px) {
     &__title{
-      font-size: 26px;
-      line-height: 32px;
+      font-size: 32px;
+      line-height: 42px;
       letter-spacing: 1px;
+    }
+
+    &__content{
+      grid-column: span 4;
     }
 
     &__descr{
@@ -94,17 +98,19 @@
     }
   }
 
-  @media (max-width: (1070px)) {
+  @media (width <= 768px) {
+    background-position: 55%;
+
+    &__content{
+      margin-top: 100px;
+    }
+
     &__title{
-      font-size: 26px;
-      line-height: 32px;
+      font-size: 28px;
+      line-height: 42px;
       letter-spacing: 1px;
     }
 
-    &__descr{
-      font-size: 15px;
-      line-height: 21px;
-    }
   }
 
 }

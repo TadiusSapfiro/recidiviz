@@ -7,7 +7,7 @@
     max-width: 720px;
     font-family: var(--secondary-family);
     font-weight: 400;
-    font-size: 30px;
+    font-size: 32px;
     line-height: 127%;
     letter-spacing: 0.04em;
     text-align: center;
@@ -22,7 +22,6 @@
   }
 
   &__item{
-    // margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -65,8 +64,6 @@
 
   }
 
-
-
   &__descr{
     width: 142px;
     font-weight: 400;
@@ -75,5 +72,25 @@
     text-align: center;
     color: var(--dark-color);
     opacity: 0.8;
+  }
+
+
+  @media(width <= 767px){
+    &__title{
+      font-size: 22px;
+    }
+  }
+
+  @media(width <= 500px){
+    padding: 60px 0;
+
+    &__list{
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    &__item--line{
+      display: none;
+    }
   }
 }
